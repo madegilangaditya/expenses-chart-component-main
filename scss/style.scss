@@ -1,0 +1,85 @@
+$primary-red:hsl(10, 79%, 65%);
+$primary-cyan:hsl(186, 34%, 60%);
+$neutral1: hsl(25, 47%, 15%);
+$neutral2: hsl(28, 10%, 53%);
+$neutral3: hsl(27, 66%, 92%);
+$neutral4: hsl(33, 100%, 98%);
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: $neutral3;
+    font-size: 1rem;
+    line-height: 1.4;
+    font-family: 'DM Sans', sans-serif;;
+}
+
+h3{
+    font-size: 1.625rem;
+}
+
+h1{
+    color: $neutral1;
+}
+
+.row{
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.col-flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.section-logo{
+    // margin-bottom: 16px;
+    padding: 67px 20px 16px 20px;
+    color: $neutral4;
+
+    .row{
+        background-color: $primary-red;
+    }
+}
+
+.section-grafik{
+    padding: 0 20px 67px 20px;
+    color: $neutral2;
+
+    .row{
+        background-color: $neutral4;
+    }
+
+    .grafiks-wrap{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    h3{
+        font-size: 2rem;
+        color: $neutral1;
+    }
+
+    .col-12{
+        padding: 10px 0 25px;
+        border-bottom: 2px solid $neutral3;
+    }
+
+    .col-flex{
+        padding-top: 25px;
+    }
+}
+
+.last-month-wrap{
+    text-align: right;
+
+    strong{
+        color: $neutral1;
+    }
+}

@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./scss/style.css">
   
   <title>Frontend Mentor | Expenses chart component</title>
 
@@ -13,9 +14,9 @@
   <main>
     <section class="section-logo">
       <div class="row">
-        <div class="col-flex">
+        <div class="col-flex col-logo">
           <div class="balance-wrap">
-            <h2>My balance</h2>
+            <p>My balance</p>
             <h3>$921.48</h3>
           </div>
           <div class="logo-wrap">
@@ -25,7 +26,7 @@
       </div>
     </section>
 
-    <section>
+    <section class="section-grafik">
       <div class="row">
         <div class="col-12">
           <h1>Spending - Last 7 days</h1>
@@ -61,12 +62,12 @@
           </div>
         </div>
         <div class="col-flex">
-          <div class="balance-wrap">
-            <h2>Total this month</h2>
+          <div class="expense-wrap">
+            <p class="expense-title">Total this month</p>
             <h3>$478.33</h3>
           </div>
           <div class="last-month-wrap">
-            <p>+2.4%</p>
+            <p><strong>+2.4%</strong></p>
             <p>from last month</p>
           </div>
         </div>
