@@ -5,7 +5,7 @@ function getChart() {
       console.log(data);
       let output = '';
       let maxVal = 0;
-      const d = new Date('June 27, 2022');
+      const d = new Date();
       let day = d.getDay();
       data.forEach(function(chart){
         output += `<div class="grafik-value">
@@ -26,12 +26,8 @@ function getChart() {
       document.querySelectorAll('.grafik-chart').forEach(function(data, index){
         const chart = data.dataset.val;
         let size = 150 / 100 * (chart / maxVal * 100);
-        console.log(size);
-        console.log(maxVal);
-        console.log(chart);
         data.style.height = `${size}px`;
-        console.log(index);
-        console.log(day);
+
         if(day !== 0){
             if(day - 1   === index){
                 data.classList.add('active');
